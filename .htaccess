@@ -1,0 +1,11 @@
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^nextbridgeinfrastructure\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.nextbridgeinfrastructure\.com$
+RewriteRule ^/?$ "http\:\/\/www\.nextbridge\.ca" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^nextbridgeinfrastructure\.ca$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.nextbridgeinfrastructure\.ca$
+RewriteRule ^/?$ "http\:\/\/nextbridge\.ca\/" [R=301,L]
+

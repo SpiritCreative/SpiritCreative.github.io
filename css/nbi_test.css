@@ -1,0 +1,413 @@
+@import url("reset.css");
+
+body {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 10pt;
+	color:#555;
+	background: #e2e2e2;
+	background-image:url('../images/background_image1.png');
+	background-position:center;
+	background-repeat: repeat-y;
+	line-height: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+
+h1 {
+	padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: -20px;
+    padding-left: 20px;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+h2 {
+	padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: -20px;
+    padding-left: 20px;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+h3 {
+	padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: -20px;
+    padding-left: 20px;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+p {
+	padding: 20px;
+	line-height: 18px;
+}
+
+strong { 
+	font-weight: bold; 
+} 
+
+em { 
+	font-style: italic; 
+} 
+
+li {
+list-style-position:inside;
+}
+
+ul {
+ 	line-height: 1.5em;
+ 	text-indent: 0px;
+ 	list-style-position: outside;
+ 	list-style-type: square;
+ 	padding: 3px;
+ 	margin: 0px 0px 0px 23px;
+}
+
+A:link {
+	text-decoration: none;
+	color: #0072cf;
+}
+A:visited {
+	text-decoration: none;
+	color: #0072cf;
+}
+A:active {
+	text-decoration: none;
+}
+A:hover {
+	text-decoration: underline;
+	color: #0072cf;
+}
+
+#topline {
+    margin: 0 auto;
+	height: 20px;
+	background: #80a3b7;
+    width: 100%;
+}
+
+
+#wrapper {
+    margin: 0 auto;
+    width: 980px;
+}
+
+#header {
+    float: left;
+    height: 120px;
+    width: 260px;
+    background: #ffffff;
+}
+
+.logo {
+	float: left;
+	margin: 25px 0 0 -20px;
+}
+
+#navigation {
+	float: right;
+	height: 30px;
+	width: 720px;
+	margin: 67px 1px 0 -20px;
+	background: #ffffff;
+	text-align: right;
+}
+
+.insetline {
+	float:left;
+	width: 20px;
+	height: 166px;
+	background-image:url('../images/insetline.png');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.infobox {
+	float:left;
+	width: 220px;
+	height: 166px;
+	background: #ffffff;
+}
+
+#slider {
+    float: left;
+    background: #cccccc;
+    width: 980px;
+}
+
+#slidershort {
+    float: left;
+    background-image:url('../images/slide_short.png');
+    width: 980px;
+	height: 120px;
+}
+
+.smallheader {
+    float: left;
+	padding:60px 0 0 240px ;
+}
+
+.blurb {
+	float: left;
+	background: #ffffff;
+	text-align: justify;
+	padding: 22px 20px 22px 20px;
+	background-image:url('../images/blurb_bg2.png');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#content {
+	float: left;
+	width: 980px;
+}
+
+#maincontent {
+	padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+	float: left;
+	width: 720px;
+}
+
+#leftnav {
+	float: left;
+	width: 240px;
+	padding-top: -20px;
+	padding-right: -20px;
+	padding-bottom: -20px;
+	padding-left: -20px;
+	background-image:url('../images/left_nav_bg.png');
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+#leftnav li {
+	line-height: 22px;
+ 	text-indent: 0px;
+ 	list-style-position: inside;
+ 	list-style-type: none;
+ 	margin: 0px 0px 0px 30px;
+}
+
+.leftnavtext {
+	font-size: 11pt;
+	color: #0072cf;
+	padding: 10px 0px 10px 20px;
+}
+
+
+#footer {
+    height: 40px;
+    width: 980px;
+    background: #b7b7b7;
+	background-image:url('../images/footer_bg.png');
+	background-position: top center;
+	background-repeat: no-repeat;
+    clear: both;
+}
+
+ul#menu {
+	margin:0;
+	padding:0;
+	list-style:none;
+	clear:both;
+}
+
+#menu li {
+	overflow:hidden;
+	text-indent:-9999px;
+	display:inline;
+	float:right;
+}
+
+#menu li a {
+	background:url('../images/sprite_buttons.png')
+	no-repeat;
+	width:100%;
+	height:100%;
+	display:block;
+}
+
+
+/* HOME Button */
+#menu li.home {
+	width:54px;
+	height:53px;
+}
+#menu li.home a {
+	background-position:0 0;
+}
+#menu li.home a:hover {
+	background-position:0 -53px;
+}
+#menu li.home a.selected {
+	background-position:0 -53px;
+}
+
+/* LEGAL Button */
+#menu li.lega {
+	width:57px; height:53px;
+}
+#menu li.lega a {
+	background-position:-54px 0;
+}
+#menu li.lega a:hover {
+	background-position:-54px -53px;
+}
+#menu li.lega a.selected {
+	background-position:-54px -53px;
+}
+
+/* PRIVACY Button */
+#menu li.priv {
+	width:73px; 
+	height:53px;
+}
+#menu li.priv a {
+	background-position:-111px 0;
+}
+#menu li.priv a:hover {
+	background-position:-111px -53px;
+}
+#menu li.priv a.selected {
+	background-position:-111px -53px;
+}
+
+/* CONTACT US Button */
+#menu li.cont {
+	width:105px;
+	height:53px;
+}
+#menu li.cont a {
+	background-position:-183px 0;
+}
+#menu li.cont a:hover {
+	background-position:-183px -53px;
+}
+#menu li.cont a.selected {
+	background-position:-183px -53px;
+}
+
+/* TERMS OF USE Button */
+#menu li.term {width:110px; height:53px;}
+#menu li.term a{background-position:-280px 0;}
+#menu li.term a:hover{background-position:-280px -53px;}
+#menu li.term a.selected{background-position:-280px -53px;}
+
+/*HEADER BUTTONS*/
+
+ul#hedr {
+	margin:0;
+	padding:0;
+	list-style:none;
+	clear:both;
+}
+
+#hedr li {
+	overflow:hidden;
+	text-indent:-9999px;
+	display:inline;
+	float:left;
+}
+
+#hedr li a {
+	background:url('../images/sprite_headers.png')
+	no-repeat;
+	width:100%;
+	height:100%;
+	display:block;
+}
+
+/* ABOUT */
+#hedr li.abou {
+	width:220px;
+	height:22px;
+}
+#hedr li.abou a {
+	background-position:0px 0;
+}
+#hedr li.abou a:hover {
+	background-position:0px -22px;
+}
+#hedr li.abou a.selected {
+	background-position:0px -22px;
+}
+
+/* Project Information */
+#hedr li.proj {
+	width:220px;
+	height:22px;
+}
+#hedr li.proj a {
+	background-position:-220px 0;
+}
+#hedr li.proj a:hover {
+	background-position:-220px -22px;
+}
+#hedr li.proj a.selected {
+	background-position:-220px -22px;
+}
+
+/* News & Updates */
+#hedr li.news {
+	width:220px;
+	height:22px;
+}
+#hedr li.news a {
+	background-position:-440px 0;
+}
+#hedr li.news a:hover {
+	background-position:-440px -22px;
+}
+#hedr li.news a.selected {
+	background-position:-440px -22px;
+}
+
+/* Community Relations */
+#hedr li.comm {
+	width:220px;
+	height:22px;
+}
+#hedr li.comm a {
+	background-position:-660px 0;
+}
+#hedr li.comm a:hover {
+	background-position:-660px -22px;
+}
+#hedr li.comm a.selected {
+	background-position:-660px -22px;
+}
+
+html { 
+	overflow-x:auto; 
+	overflow-y:scroll; 
+}
+
+.clearfix:after {
+ 	content: "."; 
+ 	display: block; 
+	height: 0; 
+ 	clear: both; 
+ 	visibility: hidden;
+ }
+ 
+.arrow {
+    width: 15px;
+    height: 15px;
+    text-align: center;
+}
+
+.rotate {
+    -moz-transform: rotate(90deg);
+       -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+}
+
